@@ -1,21 +1,20 @@
-package hudson.plugins.xshell;
+package hudson.plugins.cmdrunner;
 
 import hudson.model.Descriptor;
 import hudson.tasks.Builder;
-
 import net.sf.json.JSONObject;
 
 import org.kohsuke.stapler.StaplerRequest;
 
 /**
- * Descriptor for XShell.
+ * Descriptor for CmdRunner.
  * 
  * @author Marco Ambu
  */
-public final class XShellDescriptor extends Descriptor<Builder> {
+public final class CmdRunnerDescriptor extends Descriptor<Builder> {
 
-    public XShellDescriptor() {
-        super(XShellBuilder.class);
+    public CmdRunnerDescriptor() {
+        super(CmdRunnerBuilder.class);
         load();
     }
 
@@ -27,17 +26,17 @@ public final class XShellDescriptor extends Descriptor<Builder> {
 
     @Override
     public String getHelpFile() {
-        return "/plugin/xshell/help.html";
+        return "/plugin/cmdrunner/help.html";
     }
 
     @Override
     public String getDisplayName() {
-        return Messages.XShell_DisplayName();
+        return Messages.CmdRunner_DisplayName();
     }
 
     @Override
-    public XShellBuilder newInstance(final StaplerRequest req, final JSONObject formData) throws FormException {
-        return req.bindJSON(XShellBuilder.class, formData);
+    public CmdRunnerBuilder newInstance(final StaplerRequest req, final JSONObject formData) throws FormException {
+        return req.bindJSON(CmdRunnerBuilder.class, formData);
     }
 
 }

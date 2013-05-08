@@ -1,0 +1,6 @@
+analyseLocally=false
+eclipse.preferences.version=1
+extraProperties=sonar.password\=0000\r\nsonar.jdbc.password\={aes}Tl8DQ+OS6OSqjXOgIOYkgw\r\nsonar.host.url\=http\://service.branchitech.com/sonar\r\nsonar.jdbc.username\=sonar\r\nsonar.jdbc.url\=jdbc\:mysql\://service.branchitech.com\:3306/sonar?useUnicode\r\nsonar.login\=viewer\r\nsonar.jdbc.driver\=com.mysql.jdbc.Driver
+projectKey=org.jenkins-ci.plugins\:cmdrunner
+serverUrl=http\://localhost\:9000
+version=2
